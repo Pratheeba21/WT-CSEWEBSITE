@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSE</title>
+    <style>
+      body {
+        background-color: rgb(247, 133, 152);
+      }
+      .start {
+        display: flex;
+        background-color: rgb(247, 133, 152);
+        align-items: center;
+        justify-content: center;
+        padding: 5px 10px;
+      }
+      .logo1 {
+        height: 100px;
+        width: 100px;
+        margin-left: 30px;
+      }
+      .logo2 {
+        height: 100px;
+        width: 145px;
+        margin-right: 50px;
+      }
+      .text1 {
+        color: black;
+        font-size: 17px;
+        width: 75px;
+        text-align: center;
+      }
+      .ti {
+        font-family: Arial, Helvetica, sans-serif;
+        flex-grow: 1;
+        text-align: center;
+        text-shadow: #ddd;
+      }
+      .txt1 {
+        color: whitesmoke;
+        font-size: 25px;
+      }
+      .txt2 {
+        color: black;
+        font-size: 23px;
+      }
+      span {
+        text-align: center;
+      }
+      /*next */
+      .container {
+        display: flex;
+        width: 100%;
+        height: 490px;
+        background-color: white;
+      }
+      .section1 {
+        flex: 1;
+        max-width: 25%;
+      }
+      .content-container {
+        display: none;
+        margin-top: 20px;
+      }
+
+      .section2 {
+        height: ;
+      }
+      .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+      }
+      .link-table {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        border: 1px solid #ddd;
+        border-collapse: collapse;
+      }
+      .link-table li {
+        border-bottom: 1px solid #ddd;
+        padding: 10px;
+        text-align: center;
+        height: 40px;
+      }
+      .link-table li:hover {
+        background-color: #f5f5f5;
+      }
+      .link-table a {
+        text-decoration: none;
+        color: rgb(247, 107, 130);
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: larger;
+      }
+      .container:after {
+        display: table;
+        clear: both;
+      }
+      /* 2nd div */
+      .seq-link {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        justify-content: space-between;
+        height: 50px;
+        text-align: center;
+        background-color: pink;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: larger;
+      }
+      .seq-link a {
+        text-decoration: none;
+        padding: 10px;
+      }
+      .seq-link a:hover {
+        color: black;
+      }
+      .dropdown {
+        position: relative;
+      }
+
+      .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: large;
+      }
+
+      .dropdown-menu li {
+        padding: 10px;
+        
+      }
+
+      .dropdown-menu li:last-child {
+        border-bottom: none;
+      }
+      .dropdown-menu a{
+        color: rgb(247, 107, 130);
+      }
+      .dropdown:hover .dropdown-menu {
+        display: block;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="start">
+      <span class="text1"><b>TCF 38</b></span>
+      <img src="tn.logo.png" alt="logo" class="logo1" />
+      <div class="ti">
+        <span class="txt1"
+          ><b>GOVERNMENT COLLEGE OF ENGINEERING,THANJAVUR-613402<br /></b
+        ></span>
+        <span class="txt2"
+          ><b>Approved by AICTE and Affiliated to Anna University</b></span
+        >
+      </div>
+      <img src="logo.webp" alt="logo" class="logo2" />
+      <span class="text1"><b>Counseling Code 3464</b></span>
+    </div>
+    <div class="seq-link">
+      <div class="dropdown">
+        <a href="#">HOME</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">My Account</a></li>
+          <li><a href="#">Estate Office</a></li>
+        </ul>
+      </div>
+      <div class="dropdown">
+        <a href="#">ABOUT US</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Research</a></li>
+          <li><a href="#">Development</a></li>
+          <li><a href="#">Admission</a></li>
+        </ul>
+      </div>
+      <div class="dropdown">
+        <a href="#">ACADEMICS</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Anna University Affiliation</a></li>
+          <li><a href="#">AICTE Approval</a></li>
+          <li><a href="#">Departments</a></li>
+        </ul>
+      </div>
+      <div class="dropdown">
+        <a href="#">ACTIVITIES</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">AU Zone XV Sports Tournaments</a></li>
+          <li><a href="#">National Service Scheme</a></li>
+          <li><a href="#">National Cadet Corps</a></li>
+        </ul>
+      </div>
+      <div class="dropdown">
+        <a href="#">FACILITIES</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Hostels</a></li>
+          <li><a href="#">Canteen</a></li>
+          <li><a href="#">Library</a></li>
+        </ul>
+      </div>
+      <div class="dropdown">
+        <a href="#">COMMITIES</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Anti Ragging Squad</a></li>
+          <li><a href="#">Internship Training</a></li>
+          <li><a href="#">Green Club commities</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="section1">
+        <form>
+          <ul class="link-table">
+            <li><a href="#content1" class="li-dec">About the Department</a></li>
+            <li><a href="#content2" class="li-dec">Vision &amp; Mission</a></li>
+            <li><a href="#content3" class="li-dec">PEO &amp; PO</a></li>
+            <li><a href="#content1" class="li-dec">PSO</a></li>
+            <li><a href="#content2" class="li-dec">Faculty</a></li>
+            <li><a href="#content3" class="li-dec">Non Teaching Staff</a></li>
+            <li><a href="#content2" class="li-dec">Facilities</a></li>
+            <li>
+              <a href="#content3" class="li-dec">Co-Curricular Activity</a>
+            </li>
+          </ul>
+        </form>
+      </div>
+      <div class="section2">
+        <div class="image-container">
+          <img src="clg.jpg" alt="img" width="1000px" height="490px" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
