@@ -3,8 +3,15 @@
   <head>
     <title>CSE</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <style>
-      body {
+      .bd {
         background-color: rgb(247, 133, 152);
       }
       .start {
@@ -100,18 +107,17 @@
         list-style: none;
         padding: 0;
         justify-content: space-between;
-        height: 50px;
+        height: 40px;
         text-align: center;
-        background-color: pink;
+        background-color: white;
         font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
         font-size: larger;
+        margin-left: 10px;
+        margin-right: 10px;
       }
       .seq-link a {
         text-decoration: none;
         padding: 10px;
-      }
-      .seq-link a:hover {
-        color: black;
       }
       .dropdown {
         position: relative;
@@ -126,7 +132,6 @@
         list-style: none;
         padding: 0;
         margin: 0;
-
         font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
         font-size: large;
       }
@@ -145,97 +150,559 @@
         display: block;
       }
       #des {
+        color: rgb(247, 107, 130);
+      }
+      #des:hover {
         color: indigo;
+      }
+      .cse {
+        background-color: rgb(247, 133, 152);
+        color: white;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 20px;
+        height: 30px;
+        margin-top: -10px;
+        margin-bottom: 3px;
+        margin-left: 10px;
+      }
+      .about {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: white;
+        text-align: justify;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      h2 {
+        text-align: left;
+        text-decoration-line: underline;
+      }
+      .about p {
+        margin-left: 30px;
+      }
+      .fac {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+        justify-content: center;
+        text-align: center;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      th,
+      td {
+        border: 1px solid transparent;
+        border-bottom: 1px solid #ddd;
+      }
+      .hod {
+        font-weight: bold;
+      }
+
+      th {
+        background-color: rgb(247, 133, 152);
+        padding: 10px;
+        align-items: center;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f5f5f5;
+      }
+
+      tr:nth-child(odd) {
+        background-color: #fff;
+      }
+      td img {
+        height: 150px;
+        width: 150px;
+        border-radius: 15px;
+      }
+      .pic {
+        margin-left: 1px;
+        text-align: center;
+        width: 50px;
+      }
+      td a {
+        text-decoration: none;
+        color: darkgreen;
+      }
+      .image-table2 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        margin: 0 auto;
+        gap: 10px;
+      }
+
+      .image-table2 img {
+        width: 300px;
+        height: 250px;
+        object-fit: cover;
+      }
+
+      .image-table2 img:hover {
+        opacity: 0.8;
+        cursor: pointer;
+      }
+      .foot {
+        background-color: rgba(247, 133, 152, 0.918);
+      }
+      .foot table,.tab table {
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+        justify-content: center;
+        text-align: center;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: rgba(247, 133, 152, 0.918);
+      }
+
+      .tr1 th {
+        border: 1px solid transparent;
+      }
+      .li2 td {
+        border: 1px solid transparent;
+      }
+      .foot .hod {
+        font-weight: bold;
+      }
+
+      .foot th {
+        padding: 10px;
+        align-items: center;
+      }
+      .li2 a {
+        text-decoration: none;
+        color: black;
+      }
+      .li2 a:hover {
+        text-decoration: underline;
+      }
+      .pk{
+        background-color: rgba(247, 133, 152, 0.918);
+      }
+      .last{
+        background-color: white;
+      }
+      .cp{
+        text-align: center;
+        justify-content: center;
       }
     </style>
   </head>
   <body>
-    <div class="start">
-      <span class="text1"><b>TCF 38</b></span>
-      <img src="tn.logo.png" alt="logo" class="logo1" />
-      <div class="ti">
-        <span class="txt1"
-          ><b>GOVERNMENT COLLEGE OF ENGINEERING,THANJAVUR-613402<br /></b
-        ></span>
-        <span class="txt2"
-          ><b>Approved by AICTE and Affiliated to Anna University</b></span
-        >
+    <div class="bd">
+      <div class="start">
+        <span class="text1"><b>TCF 38</b></span>
+        <img src="tn.logo.png" alt="logo" class="logo1" />
+        <div class="ti">
+          <span class="txt1"
+            ><b>GOVERNMENT COLLEGE OF ENGINEERING,THANJAVUR-613402<br /></b
+          ></span>
+          <span class="txt2"
+            ><b>Approved by AICTE and Affiliated to Anna University</b></span
+          >
+        </div>
+        <img src="logo.webp" alt="logo" class="logo2" />
+        <span class="text1"><b>Counseling Code 3464</b></span>
       </div>
-      <img src="logo.webp" alt="logo" class="logo2" />
-      <span class="text1"><b>Counseling Code 3464</b></span>
-    </div>
-    <div class="seq-link">
-      <div class="dropdown">
-        <a href="#" id="des">HOME</a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">My Account</a></li>
-          <li><a href="#">Estate Office</a></li>
-        </ul>
-      </div>
-      <div class="dropdown">
-        <a href="#" id="des">ABOUT US</a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Research</a></li>
-          <li><a href="#">Development</a></li>
-          <li><a href="#">Admission</a></li>
-        </ul>
-      </div>
-      <div class="dropdown">
-        <a href="#" id="des">ACADEMICS</a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Anna University Affiliation</a></li>
-          <li><a href="#">AICTE Approval</a></li>
-          <li><a href="#">Departments</a></li>
-        </ul>
-      </div>
-      <div class="dropdown">
-        <a href="#" id="des">ACTIVITIES</a>
-        <ul class="dropdown-menu">
-          <li><a href="#">AU Zone XV Sports Tournaments</a></li>
-          <li><a href="#">National Service Scheme</a></li>
-          <li><a href="#">National Cadet Corps</a></li>
-        </ul>
-      </div>
-      <div class="dropdown">
-        <a href="#" id="des">FACILITIES</a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Hostels</a></li>
-          <li><a href="#">Canteen</a></li>
-          <li><a href="#">Library</a></li>
-        </ul>
-      </div>
-      <div class="dropdown">
-        <a href="#" id="des">COMMITIES</a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Anti Ragging Squad</a></li>
-          <li><a href="#">Internship Training</a></li>
-          <li><a href="#">Green Club commities</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="container">
-      <div class="section1">
-        <form>
-          <ul class="link-table">
-            <li><a href="#content1" class="li-dec">About the Department</a></li>
-            <li><a href="#content2" class="li-dec">Vision &amp; Mission</a></li>
-            <li><a href="#content3" class="li-dec">PEO &amp; PO</a></li>
-            <li><a href="#content1" class="li-dec">PSO</a></li>
-            <li><a href="#content2" class="li-dec">Faculty</a></li>
-            <li><a href="#content3" class="li-dec">Non Teaching Staff</a></li>
-            <li><a href="#content2" class="li-dec">Facilities</a></li>
-            <li>
-              <a href="#content3" class="li-dec">Co-Curricular Activity</a>
-            </li>
+      <div class="seq-link">
+        <div class="dropdown">
+          <a href="#" id="des">HOME</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Estate Office</a></li>
           </ul>
-        </form>
+        </div>
+        <div class="dropdown">
+          <a href="#" id="des">ABOUT US</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Research</a></li>
+            <li><a href="#">Development</a></li>
+            <li><a href="#">Admission</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <a href="#" id="des">ACADEMICS</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Anna University Affiliation</a></li>
+            <li><a href="#">AICTE Approval</a></li>
+            <li><a href="#">Departments</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <a href="#" id="des">ACTIVITIES</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">AU Zone XV Sports Tournaments</a></li>
+            <li><a href="#">National Service Scheme</a></li>
+            <li><a href="#">National Cadet Corps</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <a href="#" id="des">FACILITIES</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Hostels</a></li>
+            <li><a href="#">Canteen</a></li>
+            <li><a href="#">Library</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <a href="#" id="des">COMMITIES</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Anti Ragging Squad</a></li>
+            <li><a href="#">Internship Training</a></li>
+            <li><a href="#">Green Club commities</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="section2">
-        <div class="image-container">
-          <img src="clg.jpg" alt="img" width="1000px" height="490px" />
+      <div class="cse">
+        <p><b>Computer Science Engineering</b></p>
+      </div>
+      <div class="container">
+        <div class="section1">
+          <form>
+            <ul class="link-table">
+              <li>
+                <a href="#content1" class="li-dec">About the Department</a>
+              </li>
+              <li>
+                <a href="#content2" class="li-dec">Vision &amp; Mission</a>
+              </li>
+              <li><a href="#content3" class="li-dec">PEO &amp; PO</a></li>
+              <li><a href="#content1" class="li-dec">PSO</a></li>
+              <li><a href="#content2" class="li-dec">Faculty</a></li>
+              <li><a href="#content3" class="li-dec">Non Teaching Staff</a></li>
+              <li><a href="#content2" class="li-dec">Facilities</a></li>
+              <li>
+                <a href="#content3" class="li-dec">Co-Curricular Activity</a>
+              </li>
+            </ul>
+          </form>
+        </div>
+        <div class="section2">
+          <div class="image-container">
+            <img src="clg.jpg" alt="img" width="1000px" height="490px" />
+          </div>
         </div>
       </div>
     </div>
+    <div class="about">
+      <h2>About Us</h2>
+      <p>
+        The Excellence, Relevance in teaching, emerging the new technology and
+        ideas is the vision of the department.
+      </p>
+      <p>
+        The Department was started in 2013 for the upcoming innovators. The
+        Department offers four year under graduate programme in Computer Science
+        is intended to educate the student with latest technology and updation
+        of advanced area of Computer Science.
+      </p>
+      <p>
+        The Department has excellent Infrastructure, Classrooms, Laboratory
+        facilities for the goodness of the students. The necessary licensed
+        software and internet facilities are available to all the students.
+      </p>
+      <p>
+        The team of highly qualified and dedicated teaching faculties motivate &
+        encourage the student to have depth knowledge for developing the
+        software and hardware. Creating the Innovators, Scientist is the Mission
+        of the department.
+      </p>
+    </div>
+    <div class="about">
+      <h2>VISION</h2>
+      <p>
+        To be a prominent and renowned department recognized as competent
+        Engineers in a myriad of application areas with research and innovation
+        Ideas.
+      </p>
+      <h2>MISSION</h2>
+      <p>
+        To articulate the new ideas in the field of Computer Science and
+        Engineering with software and problem solving skills, leadership
+        qualities, team spirit.
+      </p>
+      <p>
+        To impact the ethical responsibilities, helping the students to
+        contribute positively to the economic well being of our nation and to
+        tackle the complex technological challenges of the future world.
+      </p>
+    </div>
+    <div>
+      <h2 class="fac">Faculties</h2>
+    </div>
+    <div>
+      <table>
+        <thead>
+          <tr class="hd">
+            <th class="pic">Picture</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Qualification</th>
+            <th>Designation</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="hod">
+            <td><img src="p1.jpg" alt="Picture" /></td>
+            <td>Mr. K.Manojkumar</td>
+            <td>CSE</td>
+            <td>M.E., (Computer Science and Engineering)</td>
+            <td>Associate Professor and HOD</td>
+            <td><a href="kmk_manoj@yahoo.com">kmk_manoj@yahoo.com</a></td>
+          </tr>
+          <tr>
+            <td><img src="p2.jpg" alt="Picture" /></td>
+            <td>Dr. R. Golda Brunet</td>
+            <td>CSE</td>
+            <td>B.E., M.E.,Ph.D.,</td>
+            <td>Associate Professor</td>
+            <td>
+              <a href="goldabrunet@gcetj.edu.in">goldabrunet@gcetj.edu.in</a>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="p3.jpg" alt="Picture" /></td>
+            <td>Mr. N. Karthikeyan</td>
+            <td>CSE</td>
+            <td>M.E., (Computer Science and Engineering)</td>
+            <td>Assistant Professor</td>
+            <td>
+              <a href="nkarthikeyan@gcetj.edu.in">nkarthikeyan@gcetj.edu.in</a>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="p4.jpg" alt="Picture" /></td>
+            <td>Dr. G. Mahalakshmi</td>
+            <td>CSE</td>
+            <td>M.E., Ph.D.,</td>
+            <td>Assistant Professor</td>
+            <td>
+              <a href="gmahalaksmi@gcetj.edu.in">gmahalaksmi@gcetj.edu.in</a>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="p5.jpg" alt="Picture" /></td>
+            <td>Dr.Indirani G</td>
+            <td>CSE</td>
+            <td>M.E, Ph.D</td>
+            <td>ASSOCIATE PROFESSOR(CAS)</td>
+            <td>
+              <a href="indhiranig@gctej.edu.in">indhiranig@gctej.edu.in</a>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="p6.jpg" alt="Picture" /></td>
+            <td>Dr. N.Suguna</td>
+            <td>CSE</td>
+            <td>M.E., Ph.D.,(Computer Science and Engineering)</td>
+            <td>Associate Professor (CAS)</td>
+            <td><a href="nsuguna@gcetj.edu.in">nsuguna@gcetj.edu.in</a></td>
+          </tr>
+          <tr>
+            <td><img src="p7.jpg" alt="Picture" /></td>
+            <td>Dr. R. Manikandan</td>
+            <td>CSE</td>
+            <td>M.E., Ph .D.</td>
+            <td>Associate Professor (CAS)</td>
+            <td>
+              <a href="rmanikandan@gcetj.edu.in">rmanikandan@gcetj.edu.in</a>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="p8.jpg" alt="Picture" /></td>
+            <td>Dr. G. Pattabirani</td>
+            <td>CSE</td>
+            <td>Phd</td>
+            <td>Assistant Professor</td>
+            <td>
+              <a href="gpattabirani@gcetj.edu.in">gpattabirani@gcetj.edu.in</a>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="p9.jpg" alt="Picture" /></td>
+            <td>Mr. G.Tamilkumaran</td>
+            <td>CSE</td>
+            <td>M.Tech., (Information Technology)</td>
+            <td>Assistant Professor (Adhoc)</td>
+            <td>
+              <a href="gtamilkumaran@gcetj.edu.in"
+                >gtamilkumaran@gcetj.edu.in</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td><img src="p10.jpg" alt="Picture" /></td>
+            <td>Ms. V.Vijayabharathi</td>
+            <td>CSE</td>
+            <td>M.E., (Computer Science and Engineering)</td>
+            <td>Assistant Professor (Adhoc)</td>
+            <td>
+              <a href="bvijayabharathi@gcetj.edu.in"
+                >bvijayabharathi@gcetj.edu.in</a
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="about">
+      <h2>Non Teaching Staff</h2>
+    </div>
+    <div>
+      <table>
+        <thead>
+          <tr class="hd">
+            <th class="pic">Picture</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Qualification</th>
+            <th>Designation</th>
+            <th>Email</th>
+            <th>Contact No</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="hod">
+            <td><img src="s1.jpg" alt="Picture" /></td>
+            <td>SENDHILKUMAR M</td>
+            <td>CSE</td>
+            <td>DECE,</td>
+            <td>Artisan Grade II</td>
+            <td>
+              <a href="sendhilkumarmm@gcetj.edu.in"
+                >sendhilkumarmm@gcetj.edu.in</a
+              >
+            </td>
+            <td>9976997251</td>
+          </tr>
+          <tr>
+            <td><img src="s2.jpg" alt="Picture" /></td>
+            <td>MURUGAPANDIAN V</td>
+            <td>CSE</td>
+            <td>D.Comp.Tech</td>
+            <td>Lab Assistant</td>
+            <td>
+              <a href="murugapandianv@gcetj.edu.in"
+                >murugapandianv@gcetj.edu.in</a
+              >
+            </td>
+            <td>9865242180</td>
+          </tr>
+          <tr>
+            <td><img src="s3.jpg" alt="Picture" /></td>
+            <td>VIMALPRASATH D</td>
+            <td>CSE</td>
+            <td>D.Com.Engg ,BCA, MCA</td>
+            <td>Lab Assistant</td>
+            <td>
+              <a href="vimalprasathd@gcetj.edu.in"
+                >vimalprasathd@gcetj.edu.in</a
+              >
+            </td>
+            <td>9994576738</td>
+          </tr>
+          <tr>
+            <td><img src="s4.jpg" alt="Picture" /></td>
+            <td>THIRUGNANAM K</td>
+            <td>CSE</td>
+            <td>D.Comp.Tech</td>
+            <td>Lab Assistant</td>
+            <td>
+              <a href="thirugnanamk@gcetj.edu.in">thirugnanamk@gcetj.edu.in</a>
+            </td>
+            <td>8668164354</td>
+          </tr>
+          <tr>
+            <td><img src="s5.jpg" alt="Picture" /></td>
+            <td>DHEEPA R</td>
+            <td>CSE</td>
+            <td>D.Comp.Tech</td>
+            <td>Lab Assistant</td>
+            <td><a href="dheepar@gcetj.edu.in">dheepar@gcetj.edu.in</a></td>
+            <td>9942427283</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="about">
+      <h2>Facilites</h2>
+      <ul>
+        <li>
+          <p>
+            Two Number of spacious and well equipped laboratories with 100
+            networked systems with UPS, Printer support the various laboratories
+            like Computer programming & Graphics Lab
+          </p>
+        </li>
+        <li><p>Object oriented programming Lab (OOPS Lab)</p></li>
+        <li><p>Language Processor Lab</p></li>
+        <li><p>Network & OS Lab</p></li>
+        <li><p>Internet & Project Lab</p></li>
+      </ul>
+    </div>
+    <div class="about">
+      <h2>Co-Curricular Activities</h2>
+    </div>
+    <div>
+      <div class="image-table2">
+      <img src="z1.jpg" alt="Image 1" />
+      <img src="z2.jpg" alt="Image 2" />
+      <img src="z3.jpg" alt="Image 3" />
+      <img src="z4.jpg" alt="Image 4" />
+      <img src="z5.jpg" alt="Image 5" />
+      <img src="z6.jpg" alt="Image 6" />
+    </div>
+    </div>
+    <div  class="last">
+      <p></p>
+    </div>
+    <footer>
+      <div class="foot">
+      <table class="tab">
+        <thead>
+          <tr class="tr1">
+            <th class="pk">SOCIAL MEDIA</th>
+            <th class="pk">QUICK LINKS</th>
+            <th class="pk">DOWNLOADS</th>
+            <th class="pk">CONTACT US</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="li2">
+            <td class="pk"><i class="fa-brands fa-square-facebook fa-xl" style="color: #63288a;"></i></td>
+            <td class="pk"><a href="#">News &amp; Events</a></td>
+            <td class="pk"><a href="#">Mandatory Disclosure</a></td>
+            <td class="pk">Government College of Engineering-Thanjavur</td>
+          </tr>
+          <tr class="li2">
+            <td class="pk"><a href="https://www.instagram.com/gce_sengipatti/"><i class="fa-brands fa-square-instagram fa-xl" style="color: #63288a;"></i></a></td>
+            <td class="pk"><a href="#">Admission Procedurs</a></td>
+            <td class="pk"><a href="#">Faculty/Staff forms</a></td>
+            <td class="pk">Tamilnadu-613 402</td>
+          </tr>
+          <tr class="li2">
+            <td class="pk"><i class="fa-brands fa-square-x-twitter fa-xl" style="color: #63288a;"></i></td>
+            <td class="pk"><a href="#">Fee structure</a></td>
+            <td class="pk"><a href="#">Govt schoorship forms</a></td>
+            <td class="pk"><b>Phone-</b>04362 221112,221113</td>
+          </tr>
+          <tr class="li2">  
+            <td class="pk"><i class="fa-brands fa-linkedin fa-xl" style="color: #63288a;"</i></td>
+            <td class="pk"><a href="#">Circulars/Minutes</a></td>
+            <td class="pk"></td>
+            <td class="pk"><b>E-mail:</b>gcesengipatti@gmail.com</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="cp">Copyright © Government College Of Engineering - Thanjavur , 2024</p>
+    </div>
+    </footer>
   </body>
 </html>
