@@ -12,11 +12,11 @@
     />
     <style>
       .bd {
-        background-color: rgb(247, 133, 152);
+        background-color: rgb(234, 133, 247);
       }
       .start {
         display: flex;
-        background-color: rgb(247, 133, 152);
+        background-color: rgb(234, 133, 247);
         align-items: center;
         justify-content: center;
         padding: 5px 10px;
@@ -99,7 +99,7 @@
       }
       .link-table a {
         text-decoration: none;
-        color: rgb(247, 107, 130);
+        color: rgb(234, 133, 247);
         font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
         font-size: larger;
       }
@@ -150,19 +150,19 @@
         border-bottom: none;
       }
       .dropdown-menu a {
-        color: rgb(247, 107, 130);
+        color: rgb(234, 133, 247);
       }
       .dropdown:hover .dropdown-menu {
         display: block;
       }
       #des {
-        color: rgb(247, 107, 130);
+        color: rgb(234, 133, 247);
       }
       #des:hover {
         color: indigo;
       }
       .cse {
-        background-color: rgb(247, 133, 152);
+        background-color: rgb(234, 133, 247);
         color: white;
         font-family: "Times New Roman", Times, serif;
         font-size: 20px;
@@ -172,7 +172,7 @@
         margin-left: 10px;
       }
       .about {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-family: "Segoe UI";
         background-color: white;
         text-align: justify;
         margin-left: 20px;
@@ -181,9 +181,13 @@
       h2 {
         text-align: left;
         text-decoration-line: underline;
+        font-size: 25px;
+        color: #63288a;
       }
       .about p {
-        margin-left: 30px;
+        margin-left: 40px;
+        font-size: 18px;
+        color: rgb(2, 75, 75);
       }
       .fac {
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -209,7 +213,7 @@
       }
 
       th {
-        background-color: rgb(247, 133, 152);
+        background-color: rgb(234, 133, 247);
         padding: 10px;
         align-items: center;
       }
@@ -240,13 +244,14 @@
         flex-wrap: wrap;
         width: 80%;
         margin: 0 auto;
-        gap: 10px;
+        gap: 50px;
       }
 
       .image-table2 img {
         width: 300px;
         height: 250px;
         object-fit: cover;
+        border:2px solid #63288a;
       }
 
       .image-table2 img:hover {
@@ -254,7 +259,8 @@
         cursor: pointer;
       }
       .foot {
-        background-color: rgba(247, 133, 152, 0.918);
+        background-color: rgb(234, 133, 247);
+        height:300px;
       }
       .foot table,.tab table {
         width: 100%;
@@ -263,7 +269,7 @@
         justify-content: center;
         text-align: center;
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        background-color: rgba(247, 133, 152, 0.918);
+        background-color: rgb(234, 133, 247);
       }
 
       .tr1 th {
@@ -271,6 +277,9 @@
       }
       .li2 td {
         border: 1px solid transparent;
+      }
+      .tab tr{
+        height: 40px;
       }
       .foot .hod {
         font-weight: bold;
@@ -288,7 +297,7 @@
         text-decoration: underline;
       }
       .pk{
-        background-color: rgba(247, 133, 152, 0.918);
+        background-color: rgb(234, 133, 247);
       }
       .last{
         background-color: white;
@@ -373,16 +382,16 @@
           <form>
             <ul class="link-table">
               <li>
-                <a href="#content1" class="li-dec">About the Department</a>
+                <a href="#content111" class="li-dec">About the Department</a>
               </li>
               <li>
-                <a href="#content2" class="li-dec">Vision &amp; Mission</a>
+                <a href="#content222" class="li-dec">Vision &amp; Mission</a>
               </li>
-              <li><a href="#content3" class="li-dec">PEO &amp; PO</a></li>
-              <li><a href="#content1" class="li-dec">PSO</a></li>
-              <li><a href="#content2" class="li-dec">Faculty</a></li>
-              <li><a href="#content3" class="li-dec">Non Teaching Staff</a></li>
-              <li><a href="#content2" class="li-dec">Facilities</a></li>
+              <li><a href="#content333" class="li-dec">PEO &amp; PO</a></li>
+              <li><a href="#content444" class="li-dec">PSO</a></li>
+              <li><a href="#content555" class="li-dec">Faculty</a></li>
+              <li><a href="#content666" class="li-dec">Non Teaching Staff</a></li>
+              <li><a href="#content777" class="li-dec">Facilities</a></li>
               <li>
                 <a href="#content3" class="li-dec">Co-Curricular Activity</a>
               </li>
@@ -396,7 +405,7 @@
         </div>
       </div>
     </div>
-    <div class="about">
+    <div class="about" id="content111">
       <h2>About Us</h2>
       <p>
         The Excellence, Relevance in teaching, emerging the new technology and
@@ -420,7 +429,7 @@
         of the department.
       </p>
     </div>
-    <div class="about">
+    <div class="about" id="content222">
       <h2>VISION</h2>
       <p>
         To be a prominent and renowned department recognized as competent
@@ -439,8 +448,39 @@
         tackle the complex technological challenges of the future world.
       </p>
     </div>
+    <div class="about" id="content333">
+      <h2>PEO</h2>
+      <p>Graduates of Computer Science and Engineering will<br>
+ -utilize the fundamental knowledgeof basic sciences and engineering to succeed in their professional career.<br>
+- acquireexperiential learning to analyze, design, implement and verify computer-based solutions to real world problems.</p>
+        <h2>PO</h2>
+        <p>Engineering Graduates will be able to:
+<br><br>
+1. Engineering knowledge: Apply the knowledge of mathematics, science, engineeringfundamentals, and an engineering specialization to the solution of complex engineering problems.
+<br><br>
+2. Problem analysis: Identify, formulate, review research literature, and analyze complexengineering problems reaching substantiated conclusions using first principles of mathematics, natural sciences, and engineering sciences.
+<br><br>
+3. Design/development of solutions: Design solutions for complex engineering problems anddesign system components or processes that meet the specified needs with appropriate consideration for the public health and safety, and the cultural, societal, and environmental considerations.
+<br><br>
+4. Conduct investigations of complex problems: Use research-based knowledge and researchmethods including design of experiments, analysis and interpretation of data, and synthesis of the information to provide valid conclusions.
+<br><br>
+5. Modern tool usage: Create, select, and apply appropriate techniques, resources, and modernengineering and IT tools including prediction and modeling to complex engineering activities with an understanding of the limitations.
+<br><br>
+6. The engineer and society: Apply reasoning informed by the contextual knowledge to assesssocietal, health, safety, legal and cultural issues and the consequent responsibilities relevant to the professional engineering practice.
+<br><br>
+7. Environment and sustainability: Understand the impact of the professional engineering solutionsin societal and environmental contexts, and demonstrate the knowledge of, and need for sustainable development.
+<br><br>
+8. Individual and team work: Function effectively as an individual, and as a member or leader indiverse teams, and in multidisciplinary settings.
+<br><br>
+9. Communication: Communicate effectively on complex engineering activities with the engineeringcommunity and with society at large, such as, being able to comprehend and write effective reports and design documentation, make effective presentations, and give and receive clear instructions.</p><br>
+    </div>
+    <div class="about" id="content444">
+      <h2>PSO</h2>
+      <p>1. Foundations of Computer Science: Ability to use the mathematical and computing knowledge to propose viable ideas and solutions to solve real world problems.<br>
+2. Software design and Development: Ability to apply computer science knowledge for providing computer based solutions using professional skills, knowledge of software design process, programming languages and tools.</p>
+    </div>
     <div>
-      <h2 class="fac">Faculties</h2>
+      <h2 class="fac" id="content555">Faculties</h2>
     </div>
     <div>
       <table>
@@ -558,7 +598,7 @@
         </tbody>
       </table>
     </div>
-    <div class="about">
+    <div class="about" id="content666">
       <h2>Non Teaching Staff</h2>
     </div>
     <div>
@@ -637,7 +677,7 @@
         </tbody>
       </table>
     </div>
-    <div class="about">
+    <div class="about" id="content777">
       <h2>Facilites</h2>
       <ul>
         <li>
@@ -653,7 +693,7 @@
         <li><p>Internet & Project Lab</p></li>
       </ul>
     </div>
-    <div class="about">
+    <div class="about" id="content888">
       <h2>Co-Curricular Activities</h2>
     </div>
     <div>
